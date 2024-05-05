@@ -1,3 +1,16 @@
+## My Portfolio
+
+I am Yash Harshal Barve. I'm 21 and I am an Indian. This is my personal website. On this website you will find,
+- Some of my best projects,
+- My work experience,
+- My education and the courses I have taken / will be taking,
+- My interests outside computer science,
+- How you can contact me
+
+I will update this website regularly as I keep exploring new technologies and keep making cool projects.
+
+## Application Information
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
