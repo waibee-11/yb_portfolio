@@ -22,11 +22,11 @@ export default function ProjectCard({name, description, image, github, live, tec
         //         </div>
         //     </div>
         // </div>
-        <div className="relative w-4/5">
+        <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl blur-md"></div>
             <div className="card lg:card-side shadow-xl bg-primary-content">
                 <div className="max-w-2/5">
-                    <a href={live ? live : github}>
+                    <a href={live ? live : github} target="_blank">
                         <Image 
                             src={image}
                             width={500}
@@ -36,9 +36,9 @@ export default function ProjectCard({name, description, image, github, live, tec
                         />
                     </a>
                 </div>
-                <div className="card-body w-3/5 flex flex-col justify-between">
-                    <div className="flex flex-col gap-2">
-                        <h2 className="card-title text-2xl text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out"><a href={live ? live : github}>{name}</a></h2>
+                <div className="card-body w-3/5 flex flex-col justify-between max-w-2xl">
+                    <div className="flex flex-col gap-2 max-w-xl">
+                        <h2 className="card-title text-2xl text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out"><a href={live ? live : github} target="_blank">{name}</a></h2>
                         <div className="mb-5">
                             <p className="text-wrap text-lg">{description}</p>
                         </div>
@@ -51,8 +51,8 @@ export default function ProjectCard({name, description, image, github, live, tec
                         </div>
                     </div>
                     <div className="card-actions justify-end">
-                        <a href={live} className="btn btn-primary btn-outline">Live demo</a>
-                        <a href={github} className="btn btn-secondary btn-outline">Github</a>
+                        <a href={live} className="btn btn-primary btn-outline" target="_blank">Live demo</a>
+                        <a href={github} className="btn btn-secondary btn-outline" target="_blank">Github</a>
                     </div>
                 </div>
             </div>

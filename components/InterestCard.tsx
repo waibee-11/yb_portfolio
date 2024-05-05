@@ -29,7 +29,7 @@ export default function InterestCard({image, name, desc, read}: InterestCard){
                     <h2 className="card-title text-white">
                     {name}
                     </h2>
-                    <p>{desc}{read ? <a className="link link-hover text-primary" href="#"> Here are my some of my recent reads.</a> : ""}</p>
+                    <p>{desc}{read ? <a className="link link-hover text-primary" href="/books" target="_blank"> Here are my some of my recent reads.</a> : ""}</p>
                 </div>
             </div>
         </div>

@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <html style={{ scrollBehavior: 'smooth' }}>
       <body>
-        <Navbar />
         <div id="hero" className="bg-primary-content">
           <Hero />
           <div className="pt-20" id="projects">
