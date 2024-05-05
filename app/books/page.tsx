@@ -3,7 +3,7 @@ import BookCard from "@/components/BookCard";
 export default function Home(){
     return(
         <div className="px-20 py-20 bg-primary-content">
-            <div className="text-center text-4xl text-white font-semibold pb-3">Yash's reading collection</div>
+            <div className="text-center text-4xl text-white font-semibold pb-3">Yash`&apos;`s reading collection</div>
             <div className="text-center text-xl text-white font-light pb-20">As of May 04, 2024 (latest first)</div>
             <div className="flex gap-20 flex-wrap justify-center">
                 <BookCard title="Murder on the Orient Express" author="Agatha Christie" image="https://lyceumtheatre.org/wp-content/uploads/2019/09/Murder-on-the-Orient-Express-WebPstr.jpg" />

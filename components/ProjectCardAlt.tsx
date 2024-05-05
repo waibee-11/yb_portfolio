@@ -32,9 +32,9 @@ export default function ProjectCardAlt({name, description, image, github, live, 
                             <p className="text-wrap">{description}</p>
                         </div>
                         <div className="flex gap-2 flex-wrap">
-                            {tech?.map((item) => {
+                            {tech?.map((key, item) => {
                                 return (
-                                    <div className="badge badge-secondary">{item}</div>
+                                    <div key={key}  className="badge badge-secondary">{item}</div>
                                 )
                             })}
                         </div>

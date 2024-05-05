@@ -43,9 +43,9 @@ export default function ProjectCard({name, description, image, github, live, tec
                             <p className="text-wrap text-lg">{description}</p>
                         </div>
                         <div className="flex gap-2 flex-wrap">
-                            {tech?.map((item) => {
+                            {tech?.map((key, item) => {
                                 return (
-                                    <div className="badge badge-primary">{item}</div>
+                                    <div key={key} className="badge badge-primary">{item}</div>
                                 )
                             })}
                         </div>
