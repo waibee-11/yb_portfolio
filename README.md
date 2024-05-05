@@ -9,6 +9,8 @@ I am Yash Harshal Barve. I'm 21 and I am an Indian. This is my personal website.
 
 I will update this website regularly as I keep exploring new technologies and keep making cool projects.
 
+## Application Information
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
