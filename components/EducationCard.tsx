@@ -18,8 +18,8 @@ export default function EducationCard({program, uni, courses}: EducationCardData
         // </div>
         <div tabIndex={0} className="collapse collapse-arrow bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content max-w-xl h-full">
             <div className="collapse-title">
-                <h1 className="text-3xl font-semibold mb-2 text-wrap">{program}</h1>
-                <h2 className="text-xl font-medium">{uni}</h2>
+                <h1 className="text-3xl font-semibold mb-2 text-wrap text-white">{program}</h1>
+                <h2 className="text-xl font-medium text-white">{uni}</h2>
             </div>
             <div className="collapse-content"> 
                 <h3 className="text-md mb-3 font-light"><b className="font-semibold">Key courses taken: </b>{courses}</h3>             

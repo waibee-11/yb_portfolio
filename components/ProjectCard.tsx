@@ -22,15 +22,25 @@ export default function ProjectCard({name, description, image, github, live, tec
         //         </div>
         //     </div>
         // </div>
-        <div className="relative">
+        <div className="relative w-4/5">
             <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl blur-md"></div>
             <div className="card lg:card-side shadow-xl bg-primary-content">
-                <figure><img src={image} alt="Album"/></figure>
-                <div className="card-body max-w-xl flex flex-col justify-between">
+                <div className="max-w-2/5">
+                    <a href={live ? live : github}>
+                        <Image 
+                            src={image}
+                            width={500}
+                            height={500}
+                            alt={name}
+                            className="rounded-tl-2xl rounded-bl-2xl"
+                        />
+                    </a>
+                </div>
+                <div className="card-body w-3/5 flex flex-col justify-between">
                     <div className="flex flex-col gap-2">
-                        <h2 className="card-title text-white">{name}</h2>
+                        <h2 className="card-title text-2xl text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out"><a href={live ? live : github}>{name}</a></h2>
                         <div className="mb-5">
-                            <p className="text-wrap">{description}</p>
+                            <p className="text-wrap text-lg">{description}</p>
                         </div>
                         <div className="flex gap-2 flex-wrap">
                             {tech?.map((item) => {

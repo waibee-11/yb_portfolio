@@ -21,7 +21,7 @@ export default function InterestCard({image, name, desc, read}: InterestCard){
             // {read ? <a className="link link-hover text-primary" href="#"> Here are my some of my recent reads.</a> : ""}
         //     </p>
         // </div>
-        <div className="relative w-1/4">
+        <div className="relative max-w-md">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl blur-md"></div>
             <div className="card bg-primary-content h-full">
                 <figure><img src={image} alt="Shoes" /></figure>

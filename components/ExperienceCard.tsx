@@ -9,10 +9,10 @@ export default function ExperienceCard({title, description, tech, org, duration}
         //         </div>
         //     </div>
         // </div>
-        <div className="relative w-1/3">
+        <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-secondary to-primary rounded-2xl blur-md"></div>
             <div className="card bg-primary glass h-full">
-                <div className="card-body flex flex-col">
+                <div className="card-body flex flex-col max-w-lg">
                     <div className="">
                         <h2 className="card-title text-black">{title}</h2>
                         <div className="mb-5">

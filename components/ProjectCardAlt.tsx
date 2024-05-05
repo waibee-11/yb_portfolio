@@ -22,12 +22,12 @@ export default function ProjectCardAlt({name, description, image, github, live, 
         //         />
         //     </div>
         // </div>
-        <div className="relative">
+        <div className="relative w-4/5">
             <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary rounded-2xl blur-md"></div>
             <div className="card lg:card-side shadow-xl bg-primary-content">
-            <div className="card-body max-w-xl flex flex-col justify-between">
-                <div className="flex flex-col gap-2">
-                    <h2 className="card-title text-white">{name}</h2>
+                <div className="card-body max-w-xl flex flex-col justify-between">
+                    <div className="flex flex-col gap-2">
+                        <h2 className="card-title text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out"><a href={live ? live : github}>{name}</a></h2>
                         <div className="mb-5">
                             <p className="text-wrap">{description}</p>
                         </div>
@@ -44,7 +44,7 @@ export default function ProjectCardAlt({name, description, image, github, live, 
                         <a href={github} className="btn btn-primary btn-outline">Github</a>
                     </div>
                 </div>
-                <figure><img src={image} alt="Album"/></figure>
+                <figure className="max-w-2/5"><a href={live ? live : github}><img src={image} alt="Album"/></a></figure>
             </div>
         </div>
     )

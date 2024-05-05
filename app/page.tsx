@@ -13,27 +13,30 @@ import { useRef } from "react";
 export default function Home() {
   return (
     <html style={{ scrollBehavior: 'smooth' }}>
-      <div className="bg-primary-content">
-        <Hero />
-        <div className="pt-20" id="projects">
-          <TitleWhite text="Projects" />
-          <Projects />
+      <body>
+        <Navbar />
+        <div id="hero" className="bg-primary-content">
+          <Hero />
+          <div className="pt-20" id="projects">
+            <TitleWhite text="Projects" />
+            <Projects />
+          </div>
+          <div className="pt-20" id="experience">
+            <TitleCyan text="Experience" />
+            <Experience />
+          </div>
+          <div className="pt-20" id="education">
+            <TitleWhite text="Education" />
+            <Education />
+          </div>
+          <TitleCyan text="Further Interests" />
+          <Interests />
+          <div className="pt-20" id="contact">
+            <TitleWhite text="Contact" />
+            <Contact />
+          </div>
         </div>
-        <div className="pt-20" id="experience">
-          <TitleCyan text="Experience" />
-          <Experience />
-        </div>
-        <div className="pt-20" id="education">
-          <TitleWhite text="Education" />
-          <Education />
-        </div>
-        <TitleCyan text="Further Interests" />
-        <Interests />
-        <div className="pt-20" id="contact">
-          <TitleWhite text="Contact" />
-          <Contact />
-        </div>
-      </div>
+      </body>
     </html>
   );
 }
