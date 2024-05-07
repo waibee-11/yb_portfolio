@@ -26,7 +26,7 @@ export default function ExperienceCard2({title, description, tech, org, duration
                     <div className="flex gap-2 flex-wrap">
                         {tech?.map((key, item) => {
                             return (
-                                <div key={key}  className="badge badge-primary-content">{item}</div>
+                                <div key={key}  className="badge badge-primary-content">{key}</div>
                             )
                         })}
                     </div>
