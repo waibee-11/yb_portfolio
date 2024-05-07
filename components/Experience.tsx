@@ -3,7 +3,7 @@ import ExperienceCard2 from "./ExperienceCard2"
 
 export default function Experience(){
     return(
-        <div className="pt-16 pb-32 flex justify-center gap-20 flex-wrap px-20">
+        <div className="pt-16 grid grid-cols-1 xl:grid-cols-2 justify-items-center gap-10 px-5 xl:px-20">
             <ExperienceCard title="Frontend Developer Intern" description="Contributed in the development and testing of the company's website." duration="4 months" tech={["React", "Javascript", "TailwindCSS", "Git"]} org="Askme.org" />
             <ExperienceCard2 title="Data Analyst Intern" description="Performed data analysis and developed an ideal social media strategy across various channels while optimising budget." tech={["Microsoft Excel", "Tableau", "Python"]} duration="4 months" org="Lazaridis School of Business & Economics" />
             <ExperienceCard title="Software Developer Intern" description="Represented the company (client) in the website-development project. Worked with the external dev team." duration="4 months" tech={["NextJS", "Javascript", "TailwindCSS", "Git"]} org="Petrovision International LLC" />

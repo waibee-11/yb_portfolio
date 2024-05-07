@@ -33,7 +33,7 @@ export default function ProjectCardAlt({name, description, image, github, live, 
                                 <a href={live ? live : github} target="_blank">{name}</a>
                             </h2>
                             <div>
-                                <p className="text-lg text-gray-400">{description}</p>
+                                <p className="text-md xl:text-lg text-gray-400">{description}</p>
                             </div>
                             <div className="flex gap-2 flex-wrap py-5">
                                 {tech?.map((key, item) => {

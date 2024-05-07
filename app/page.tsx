@@ -28,8 +28,10 @@ export default function Home() {
             <TitleWhite text="Education" />
             <Education />
           </div>
-          <TitleCyan text="Further Interests" />
-          <Interests />
+          <div className="pt-20" id="education">
+            <TitleCyan text="Further Interests" />
+            <Interests />
+          </div>
           <div className="pt-20" id="contact">
             <TitleWhite text="Contact" />
             <Contact />

@@ -23,8 +23,8 @@ export default function Hero(){
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
-                <h1 className="text-7xl mb-3 font-bold text-white">Hey! This is</h1>
-                    <h1 className="text-8xl font-bold mb-12 text-primary bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text drop-shadow-[0_6px_6px_rgba(0,0,0,1)]">Yash H. Barve</h1>
+                <h1 className="text-4xl xl:text-7xl mb-3 font-bold text-white">Hey! This is</h1>
+                    <h1 className="text-6xl xl:text-8xl font-bold mb-12 text-primary bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text drop-shadow-[0_6px_6px_rgba(0,0,0,1)]">Yash H. Barve</h1>
                     <div className="relative mb-12">
                         <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl blur-md"></div>
                         <div className="relative mockup-code bg-gray-900">
@@ -35,7 +35,7 @@ export default function Hero(){
                             </div>
                         </div>
                     </div>
-                    <ul className="menu menu-horizontal flex gap-5">
+                    <ul className="menu menu-horizontal flex gap-5 flex-wrap justify-center">
                         <li><a href="#projects" className="text-white border border-gray-900 text-sm bg-gray-900 hover:border hover:border-primary">Projects</a></li>
                         <li><a href="#experience" className="text-white border border-gray-900 text-sm bg-gray-900 hover:border hover:border-primary">Experience</a></li>
                         <li><a href="#education" className="text-white border border-gray-900 text-sm bg-gray-900 hover:border hover:border-secondary">Education</a></li>

@@ -3,7 +3,7 @@ import ProjectCardAlt from "./ProjectCardAlt";
 
 export default function Projects(){
     return(
-        <div className="px-20 grid grid-cols-1 lg:grid-cols-2 justify-items-center py-20 bg-primary-content gap-20">
+        <div className="px-5 xl:px-20 grid grid-cols-1 lg:grid-cols-2 justify-items-center pt-20 bg-primary-content gap-10">
             <ProjectCardAlt name="Functional Clone of Medium.com" description="The project is inspired by the popular blogging platform Medium.com, offering users a similar experience with key features tailored to their needs. Users can seamlessly add, update, and delete their blogs, empowering them with full control over their content. The authentication system enables secure login, logout, and updating of user information, ensuring a personalized experience for each user." image="/medium-icon-1.jpeg" github="https://github.com/waibee-11/100xDevs/tree/main/medium-blog" live="https://medium-yb.vercel.app/" tech={["React", "Typescript", "TailwindCSS", "Hono", "Cloudflare Workers", "Postgre SQL", "Prisma", "npm"]} />
 
             <ProjectCardAlt name="Weather Forecast App" description="A weather application that delivers not only the current weather conditions but also forecasts for the upcoming days, all presented in an exquisite interface. The App also allows users to search for any desired city. The app has a simple yet captivating design making it easy for users to look up the weather." image="/evrab-weather-icon-1.jpeg" github="https://github.com/waibee-11/Weather-App/tree/main" live="https://main--weather-app-waibee.netlify.app/#" tech={["HTML", "CSS", "Javascript", "API"]} />
