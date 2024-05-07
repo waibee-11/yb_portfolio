@@ -36,7 +36,7 @@ export default function ProjectCard({name, description, image, github, live, tec
                         />
                     </a>
                 </div>
-                <div className="card-body w-3/5 flex flex-col justify-between max-w-2xl">
+                <div className="card-body w-3/5 flex flex-col justify-between max-w-2xl flex-wrap">
                     <div className="flex flex-col gap-2 max-w-xl">
                         <h2 className="card-title text-2xl text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out"><a href={live ? live : github} target="_blank">{name}</a></h2>
                         <div className="mb-5">
@@ -45,7 +45,7 @@ export default function ProjectCard({name, description, image, github, live, tec
                         <div className="flex gap-2 flex-wrap">
                             {tech?.map((key, item) => {
                                 return (
-                                    <div key={key} className="badge badge-primary">{item}</div>
+                                    <div key={key} className="badge badge-primary">{key}</div>
                                 )
                             })}
                         </div>

@@ -22,29 +22,33 @@ export default function ProjectCardAlt({name, description, image, github, live, 
         //         />
         //     </div>
         // </div>
-        <div className="relative w-4/5">
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary rounded-2xl blur-md"></div>
-            <div className="card lg:card-side shadow-xl bg-primary-content">
-                <div className="card-body max-w-xl flex flex-col justify-between">
-                    <div className="flex flex-col gap-2">
-                        <h2 className="card-title text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out"><a href={live ? live : github}>{name}</a></h2>
-                        <div className="mb-5">
-                            <p className="text-wrap">{description}</p>
-                        </div>
-                        <div className="flex gap-2 flex-wrap">
-                            {tech?.map((key, item) => {
+        <div className="col-span-1 relative max-w-xl">
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl blur-md"></div>
+            <div className="card bg-primary-content h-full">
+                <figure><a href={live ? live : github} target="_blank"><img src={image} alt="Shoes" /></a></figure>
+                <div className="card-body">
+                    <div className="flex flex-col justify-between h-full gap-10">
+                        <div className="top-part">
+                            <h2 className="card-title text-2xl pb-3 text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text transition duration-200 ease-in-out">
+                                <a href={live ? live : github} target="_blank">{name}</a>
+                            </h2>
+                            <div>
+                                <p className="text-lg text-gray-400">{description}</p>
+                            </div>
+                            <div className="flex gap-2 flex-wrap py-5">
+                                {tech?.map((key, item) => {
                                 return (
-                                    <div key={key}  className="badge badge-secondary">{item}</div>
+                                    <div key={key} className="badge badge-primary">{key}</div>
                                 )
-                            })}
+                                })}
+                            </div>
                         </div>
-                    </div>
-                    <div className="card-actions justify-start">
-                        <a href={live} className="btn btn-secondary btn-outline">Live demo</a>
-                        <a href={github} className="btn btn-primary btn-outline">Github</a>
+                        <div className="card-actions">
+                            <a href={live} className="btn btn-primary btn-outline" target="_blank">Live demo</a>
+                            <a href={github} className="btn btn-secondary btn-outline" target="_blank">Github</a>
+                        </div>
                     </div>
                 </div>
-                <figure className="max-w-2/5"><a href={live ? live : github}><img src={image} alt="Album"/></a></figure>
             </div>
         </div>
     )
