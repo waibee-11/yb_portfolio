@@ -20,7 +20,7 @@ export default function WeatherApp(){
                 All rights belong to <a href="https://github.com/Rob--W" target="_blank" className="text-primary hover:text-secondary">Rob Wu</a>. You can learn more about this service <a href="https://github.com/Rob--W/cors-anywhere" target="_blank" className="text-primary hover:text-secondary">here</a>.
             </div>
             <button className="font-bold text-white bg-primary rounded-full px-3 py-1 mb-5 mt-12 hover:bg-secondary transition ease-in-out">
-                <a href="https://main--weather-app-waibee.netlify.app/#">CLICK HERE ONCE YOU'VE GOT TEMPORARY ACCESS TO THE CORS ANYWHERE SERVICE</a>
+                <a href="https://main--weather-app-waibee.netlify.app/#">CLICK HERE ONCE YOU&apos;VE GOT TEMPORARY ACCESS TO THE CORS ANYWHERE SERVICE</a>
             </button>
         </div>
     )
