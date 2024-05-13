@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 export default function WeatherApp(){
 
     return (
-        <div className="px-10 pt-10 text-white w-2/4">
+        <div className="px-10 pt-10 text-white md:w-2/4">
             <div className="text-3xl font-semibold">
                 Weather Forecast App by Yash Barve
             </div>
