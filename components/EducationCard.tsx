@@ -16,7 +16,7 @@ export default function EducationCard({program, uni, courses}: EducationCardData
         //         </div>
         //     </div>
         // </div>
-        <div tabIndex={0} className="col-span-1 collapse collapse-arrow bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content max-w-xl h-full">
+        <div tabIndex={0} className="col-span-1 collapse collapse-arrow bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content max-w-xl focus:h-64 h-[150px] transition-all duration-300 ease-in-out">
             <div className="collapse-title">
                 <h1 className="text-3xl font-semibold mb-2 text-wrap text-white">{program}</h1>
                 <h2 className="text-xl font-medium text-white">{uni}</h2>
