@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Pill from "./Pill"
 
-export default function ProjectCardAlt({name, description, image, github, live, tech}: {name: string, description: string, image: string, github: string, live: string, tech: Array<string>}){
+export default function ProjectCardAlt({name, description, image, github, live, tech, warning}: {name: string, description: string, image: string, github: string, live: string, tech: Array<string>, warning?:string}){
     return (
         // <div>
         //     <div className="flex px-3 py-24 justify-center gap-32 items-center">
@@ -45,7 +45,7 @@ export default function ProjectCardAlt({name, description, image, github, live, 
                         </div>
                         <div className="card-actions">
                             <a href={live} className="btn btn-primary btn-outline" target="_blank">Live demo</a>
-                            <a href={github} className="btn btn-secondary btn-outline" target="_blank">Github</a>
+                            {github && <a href={github} className="btn btn-secondary btn-outline" target="_blank">Github</a>}
                         </div>
                     </div>
                 </div>
