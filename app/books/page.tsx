@@ -4,7 +4,7 @@ export default function Home(){
     return(
         <div className="px-20 py-20 bg-primary-content">
             <div className="text-center text-4xl text-white font-semibold pb-3">Yash&apos;s reading collection</div>
-            <div className="text-center text-xl text-white font-light pb-20">As of May 04, 2024 (latest first)</div>
+            <div className="text-center text-xl text-white font-light pb-20">As of June 18, 2024 (latest first)</div>
             <div className="grid grid-cols-1 xl:grid-cols-3 justify-items-center gap-10">
                 <BookCard title="The Rudest Book Ever" author="Shwetabh Gangwar" image="https://m.media-amazon.com/images/I/71iUJLYyM8L._AC_UF1000,1000_QL80_.jpg" />
                 <BookCard title="Eat That Frog" author="Brian Tracy" image="https://m.media-amazon.com/images/I/81pDx9j+xQL._AC_UF1000,1000_QL80_.jpg" />
